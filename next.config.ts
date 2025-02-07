@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import nextra from 'nextra';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const withNextra = nextra({
+  staticImage: true,
+});
 
-export default nextConfig;
+export default withNextra({
+  // 其他 Next.js 配置
+});
